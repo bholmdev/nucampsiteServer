@@ -7,7 +7,7 @@ campsiteRouter.route("/")
     res.setHeader("Content-Type", "text/plain");
     next();
 })
-.get((rez, res) => {
+.get((req, res) => {
     res.end("Will send all the campsites to you.");
 })
 .post((req, res) => {
